@@ -1,0 +1,60 @@
+##########  pre-processing  ##########
+# SPADA source code directory
+SPADA_SRC_DIR = /home/youngn/truji033/software/spada
+# SPADA output directory
+# can be overwritten by '-dir' command line argument
+SPADA_OUT_DIR = /home/youngn/truji033/Data/Cluster/Expand1/Spada/Ad
+# directory containing profile alignments and HMM files
+SPADA_HMM_DIR = /home/youngn/truji033/software/spada/profile/Cluster
+# genome sequence file (FASTA format, required) 
+# can be overwritten by '-fas' command line argument
+SPADA_FAS = /home/youngn/truji033/Data/Genomes/Ad.fa
+# gene annotation file (GFF3 format, optional) 
+# can be overwritten by '-gff' command line argument
+#SPADA_GFF = test/51_gene.gff
+
+##########  motif mining  ##########
+# hmmsearch binary (hmmserach) should locate in {HMMER}/bin
+HMMER = /home/youngn/truji033/spada_soft/hmmer
+# ClustalO (clustalo) binary should locate in {ClustalO}/bin
+ClustalO = /home/youngn/truji033/software/clustalo
+# trimal binary (trimal) should locate in {trimAl}/bin
+trimAl = /home/youngn/truji033/spada_soft/trimal
+
+##########  model prediction  ##########
+# organism to run, this tells GeneMark / GlimmerHMM / GeneID 
+# which *.mod / training dir / *.param file to use
+# can be overwritten by '-org' command line argument
+SPADA_ORG = Ad
+# gene prediction programs to run, seperated by semicolons
+# can be overwritten by '-method' command line argument
+methods = Augustus_evidence;GeneWise_SplicePredictor
+#methods = Augustus_evidence;GeneWise_SplicePredictor;Augustus_de_novo;GeneMark;GlimmerHMM;GeneID
+
+# augustus binary (augustus) should locate in {Augustus}/bin
+# config diretory shold be {Augustus}/config
+Augustus = /home/youngn/truji033/spada_soft/augustus
+# genewise binary (genewise) should locate in {GeneWise}/bin
+GeneWise = /home/youngn/zhoux379/spada_soft/wise2.2.0
+# SplicePredictor binary (SplicePredictor) should locate in {SplicePredictor}/bin
+SplicePredictor = /home/youngn/zhoux379/spada_soft/GENESEQER
+# GeneMark binary (gmhmme3) and MOD files (a_thaliana.mod) should locate in {GeneMark} 
+GeneMark = /home/youngn/zhoux379/spada_soft/genemark_hmm_euk.linux_64
+# GlimmerHMM binary (glimmerhmm) should locate in {GlimmerHMM}/bin
+# training directory locate in {GlimmerHMM}/trained_dir
+GlimmerHMM = /home/youngn/zhoux379/spada_soft/GlimmerHMM
+# GeneID binary (geneid) should locate in {GeneID}/bin
+# parameter files should locate in {GeneID}/param
+GeneID = /home/youngn/zhoux379/spada_soft/geneid
+
+##########  model evaluation  ##########
+# does the searched gene family contain signal peptide? 
+# set to 0 if non-secreted; can be overwritten by '-sp' command line argument
+eval_sp = 1
+# signalp script (signalp) should locate in {SignalP}
+# required if eval_sp is set to 1
+SignalP = /home/youngn/truji033/spada_soft/signalp-4.0/
+# final E-value threshold used to filter predction set
+# can be overwritten by '-e' command line argument
+evalue = 0.001
+
