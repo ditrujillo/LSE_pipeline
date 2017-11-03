@@ -1,3 +1,5 @@
+# Author: Diana Trujillo ditrujillo@gmail.com
+
 #Setup
 rm(list=ls())
 

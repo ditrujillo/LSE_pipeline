@@ -16,7 +16,7 @@ CONTENTS
 
 OVERVIEW
 
-The LSE_Discovery_Pipeline was developed to detect Lineage Specific Expansions (LSEs) of nodulation-related small secreted peptides across legume species. 
+The LSE Discovery Pipeline was developed to detect Lineage Specific Expansions (LSEs) of nodulation-related small secreted peptides across legume species. 
 
 In the first stage, the pipeline uses RNA-seq data from four tissues, including nodules, that is mapped to the reference genome for each species. Transcripts with nodule-enhanced expression are identified, then reading frames for those tissues are filtered for size and presence of a signal peptide. 
 
@@ -28,8 +28,8 @@ In the third stage, the candidate LSE families are manually curated through comb
 
 CITATION
 
+Author: Diana Trujillo ditrujillo@gmail.com
 "Cross-species examination of legume signaling peptides reveals that nodule-specific PLAT domain proteins are required for nodulation" Trujillo et al. (In Prep.)
-
 
 
 DEPENDENCIES
@@ -72,7 +72,7 @@ Note: A detailed explanation of the LSE discovery pipeline steps and required us
 1. Get LSE pipeline scripts
 
 cd 
-git clone git://github.com/ditrujillo/LSE_pipeline
+git clone git://github.com/ditrujillo/LSE_pipeline.git
 
 
 2. Manually download genomes from Phytozome 
@@ -135,9 +135,6 @@ cd ~/LSE_pipeline
 
 cd ~/LSE_pipeline
 ./Heatmap.R
-
-
-
 
 
 

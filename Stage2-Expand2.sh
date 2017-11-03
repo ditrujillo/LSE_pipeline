@@ -1,5 +1,7 @@
 #!/bin/bash -l
 
+# Author: Diana Trujillo ditrujillo@gmail.com
+
 module load fastqc/0.11.5
 module load sratoolkit/2.8.2
 module load bowtie/2.3.0
