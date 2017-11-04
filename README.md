@@ -75,7 +75,7 @@ The following scripts at https://github.com/ditrujillo/LSE_pipeline/scripts are 
 USAGE
 ------------
 
-**Note:** A detailed explanation of the LSE discovery pipeline steps and required user input is outlined in LSE_pipeline.sh
+**Note:** A detailed explanation of the LSE discovery pipeline steps and required user input is outlined in [LSE_pipeline.sh](LSE_pipeline.sh)
 
 1. Get LSE pipeline scripts
 
