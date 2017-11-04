@@ -59,18 +59,6 @@ LSE_pipeline.sh is a shell script that requires loading (if working within the U
 - SPADA: https://github.com/orionzhou/SPADA
 - signalP/4.0
 
-The following scripts at https://github.com/ditrujillo/LSE_pipeline/scripts are required:
-
-- 60Convert2Fa.pl
-- Collapse100.pl
-- ExtractFastaRecords.pl
-- getORFs.pl
-- SplitFastaByNum.pl
-- splitJobSigP.pl
-- translate6.pl
-- Transpose.pl
-- TrimUntilM.pl
-
 
 USAGE
 ------------
