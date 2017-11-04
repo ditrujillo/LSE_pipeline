@@ -7,15 +7,15 @@ CONTENTS
 -   Overview
 -   Citation
 -   Dependencies
--   Usage
-1. Get LSE pipeline scripts
-2. Manually download genomes from Phytozome 
-3. Run Setup.sh to map reads to genomes, get nodule transcriptome
-4. Run Stage1.sh to obtain initial pool of candidate nodule-specific small secreted peptides
-5. Run Stage2-Expand1.sh to identify lineage-specific expansions of nodule-specific small secreted peptides
-6. Run Stage2-Expand2.sh to refine the peptides identified for candidate LSE families
-7. Run Stage3.sh on the command line interactively, in step with the manual curation steps described in LSE_pipeline.sh
-8. Run Heatmap.R to combine phylogenetic and expression data to confirm LSEs
+-   Usage:
+    1. Get LSE pipeline scripts
+    2. Manually download genomes from Phytozome 
+    3. Run Setup.sh to map reads to genomes, get nodule transcriptome
+    4. Run Stage1.sh to obtain initial pool of candidate nodule-specific small secreted peptides
+    5. Run Stage2-Expand1.sh to identify lineage-specific expansions of nodule-specific small secreted peptides
+    6. Run Stage2-Expand2.sh to refine the peptides identified for candidate LSE families
+    7. Run Stage3.sh on the command line interactively, in step with the manual curation steps described in LSE_pipeline.sh
+    8. Run Heatmap.R to combine phylogenetic and expression data to confirm LSEs
 
 
 OVERVIEW
@@ -79,35 +79,35 @@ USAGE
 
 1. Get LSE pipeline scripts
 
-- cd
-- git clone git://github.com/ditrujillo/LSE_pipeline.git
+ **cd
+ git clone git://github.com/ditrujillo/LSE_pipeline.git
 
 
 2. Manually download genomes from Phytozome 
 
-- mkdir -p ~/LSE_pipeline/Setup/Mt
-- mkdir -p ~/LSE_pipeline/Setup/Gm
-- mkdir -p ~/LSE_pipeline/Setup/Tp
-- mkdir -p ~/LSE_pipeline/Setup/Pv
+ **mkdir -p ~/LSE_pipeline/Setup/Mt
+ mkdir -p ~/LSE_pipeline/Setup/Gm
+ mkdir -p ~/LSE_pipeline/Setup/Tp
+ mkdir -p ~/LSE_pipeline/Setup/Pv
 
-   Connect to JGI Phytozome: https://genome.jgi.doe.gov/pages/dynamicOrganismDownload.jsf?organism=Phytozome#
+   **Note:** Connect to JGI Phytozome: https://genome.jgi.doe.gov/pages/dynamicOrganismDownload.jsf?organism=Phytozome#
 
-- Download M.truncatula genome to ~/LSE_pipeline/Setup/Mt: Mtruncatula_285_Mt4.0.fa.gz 
-- Download G.max genome to        ~/LSE_pipeline/Setup/Gm: Gmax_275_v2.0.fa.gz
-- Download T.pratense genome to   ~/LSE_pipeline/Setup/Tp: Tpratense_385_v2.fa.gz
-- Download P.vulgaris genome to   ~/LSE_pipeline/Setup/Pv: Pvulgaris_442_v2.0.fa.gz
+ **Download M.truncatula genome to ~/LSE_pipeline/Setup/Mt: Mtruncatula_285_Mt4.0.fa.gz 
+ Download G.max genome to        ~/LSE_pipeline/Setup/Gm: Gmax_275_v2.0.fa.gz
+ Download T.pratense genome to   ~/LSE_pipeline/Setup/Tp: Tpratense_385_v2.fa.gz
+ Download P.vulgaris genome to   ~/LSE_pipeline/Setup/Pv: Pvulgaris_442_v2.0.fa.gz
 
 
 3. Run Setup.sh to map reads to genomes, and obtain genomic boundaries for nodule transcripts
 
-- cd ~/LSE_pipeline
-- ./Setup.sh
+ **cd ~/LSE_pipeline
+ ./Setup.sh
 
 
 4. Run Stage1.sh to obtain initial pool of candidate nodule-specific small secreted peptides
 
-- cd ~/LSE_pipeline
-- ./Stage1.sh
+ **cd ~/LSE_pipeline
+ ./Stage1.sh
 
 
 5. Run Stage2-Expand1.sh to identify lineage-specific expansions of nodule-specific small secreted peptides
@@ -118,16 +118,16 @@ USAGE
 
    Stage2-Expand1.sh must be modified with the locations of the user files, in order to run spada.pl
 
-- cd ~/LSE_pipeline
-- ./Stage2-Expand1.sh
+ **cd ~/LSE_pipeline
+ ./Stage2-Expand1.sh
 
 
 6. Run Stage2-Expand2.sh to refine the peptides identified for candidate LSE families
 
    **Note:** Stage2-Expand2.sh must be modified with the locations of the user files, in order to run spada.pl
 
-- cd ~/LSE_pipeline
-- ./Stage2-Expand2.sh
+ **cd ~/LSE_pipeline
+ ./Stage2-Expand2.sh
 
 
 7. Run Stage3.sh on the command line interactively, in step with the manual curation steps described in LSE_pipeline.sh
@@ -136,14 +136,14 @@ USAGE
    
    The peptide clusters can be grouped into gene families according to #Stage3# in LSE_pipeline.sh
 
-- cd ~/LSE_pipeline
-- ./Stage3.sh
+ **cd ~/LSE_pipeline
+ ./Stage3.sh
 
 
 8. Run Heatmap.R to combine phylogenetic and expression data to confirm LSEs
 
-- cd ~/LSE_pipeline
-- ./Heatmap.R
+ **cd ~/LSE_pipeline
+ ./Heatmap.R
 
 
 
